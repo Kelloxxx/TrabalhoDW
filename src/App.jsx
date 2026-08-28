@@ -19,10 +19,6 @@ import Developers from './components/Developers';
 
 // Placeholders para evitar erro enquanto não implementados
 const Escalacao = () => <div className="panel"><h2>Escalação</h2><p>Em breve</p></div>;
-const ScrumMaster = () => <div className="panel"><h2>Scrum Master</h2><p>Em breve</p></div>;
-const Owner = () => <div className="panel"><h2>Owner</h2><p>Em breve</p></div>;
-const ProductOwner = () => <div className="panel"><h2>Product Owner</h2><p>Em breve</p></div>;
-const Developers = () => <div className="panel"><h2>Developers</h2><p>Em breve</p></div>;
 const BuyerProf = () => <div className="panel"><h2>Compradores (Papel)</h2><p>Em breve</p></div>;
 const BuyerProduct = () => <div className="panel"><h2>Compradores (Produto)</h2><p>Em breve</p></div>;
 const CorrupSabotagem = () => <div className="panel"><h2>Corrupção & Sabotagem</h2><p>Em breve</p></div>;
