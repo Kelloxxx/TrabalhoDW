@@ -1,27 +1,32 @@
-Seguinte piazada ja fiz a parte dos codigos em geral
+markdown
+# Simulação Scrum Competitiva — Painel de Avaliação (React)
 
+Sistema para avaliação de simulação Scrum, com abas para configuração, alunos, escalação, avaliação de papéis e resultado final. Portado para React a partir do sistema original HTML/JS.
 
-agora pra vcs:
-Criar a estrutura do projeto React
-bash
-npm create vite@latest scrum-avaliacao-react -- --template react
+## 📋 Pré-requisitos
+
+Antes de começar, certifique-se de ter instalado em sua máquina:
+
+- *Node.js* (versão 18 ou superior) – [Baixar aqui](https://nodejs.org/)
+- *npm* (geralmente vem junto com o Node.js) ou *yarn*
+- Um navegador moderno (Chrome, Firefox, Edge)
+
+## 🚀 Instalação e execução local
+
+Siga os passos abaixo para rodar o projeto em sua máquina:
+
+### 1. Clone o repositório
+
+```bash
+git clone <URL_DO_SEU_REPOSITORIO>
 cd scrum-avaliacao-react
-npm install
-npm install xlsx
-
- Dividir as tarefas com o grupo (exemplo):
- 
-Pessoa	Tarefas
-1	Criar o projeto, configurar App.jsx, TopBar, Tabs, hooks
-2	Implementar Configuracao, Alunos (com importação Excel)
-3	Implementar ScrumMaster, Owner, ProductOwner, Developers
-4 (se houver)	BuyerProf, BuyerProduct, CorrupSabotagem, Resultado
-
-Testar localmente
+2. Instale as dependências
 bash
-npm run dev
+npm install
+Isso instalará todas as bibliotecas necessárias, incluindo:
 
+react e react-dom – para a interface
 
+vite – para o servidor de desenvolvimento e build
 
-
-OBS do  Zaions: lembrem de quanto forem instalar a npm, instalem também: 'npm install xlsx'
+xlsx – para leitura de arquivos Excel (importação de alunos)
