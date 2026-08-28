@@ -9,7 +9,6 @@ export default function Alunos({ dados, updateDados }) {
   const { alunos, meta, teamNames } = dados;
   const empresas = [meta.empresaA, meta.empresaB];
 
-  // Contagem de vagas
   const counts = {};
   empresas.forEach(e => {
     counts[e] = {
