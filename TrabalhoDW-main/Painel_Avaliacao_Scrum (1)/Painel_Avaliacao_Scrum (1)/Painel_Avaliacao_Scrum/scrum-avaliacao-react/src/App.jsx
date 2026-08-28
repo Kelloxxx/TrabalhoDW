@@ -7,13 +7,13 @@ import Tabs from './components/Tabs';
 import Configuracao from './components/Configuracao';
 import Alunos from './components/Alunos';
 // Os componentes abaixo serão implementados pelos outros membros
-// import Escalacao from './components/Escalacao';
 import ScrumMaster from './components/ScrumMaster';
 import Owner from './components/Owner';
 import ProductOwner from './components/ProductOwner';
 import Developers from './components/Developers';
-// import BuyerProf from './components/BuyerProf';
-// import BuyerProduct from './components/BuyerProduct';
+import Escalacao from './components/Escalacao';
+import CompradoresPapel from './components/CompradoresPapel';
+import CompradoresProduto from './components/CompradoresProduto';
 // import CorrupSabotagem from './components/CorrupSabotagem';
 // import Resultado from './components/Resultado';
 
@@ -32,8 +32,8 @@ const TABS = [
   { key: 'owner', label: 'Owner', component: Owner },
   { key: 'po', label: 'Product Owner', component: ProductOwner },
   { key: 'dev', label: 'Developers', component: Developers },
-  { key: 'buyerProf', label: 'Compradores (Papel)', component: BuyerProf },
-  { key: 'buyerProduct', label: 'Compradores (Produto)', component: BuyerProduct },
+  { key: 'buyerProf', label: 'Compradores (Papel)', component: CompradoresPapel },
+  { key: 'buyerProduct', label: 'Compradores (Produto)', component: CompradoresProduto },
   { key: 'corrupsab', label: 'Corrupção & Sabotagem', component: CorrupSabotagem },
   { key: 'result', label: 'Resultado Final', component: Resultado },
 ];
