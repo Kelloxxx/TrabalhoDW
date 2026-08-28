@@ -6,7 +6,6 @@ import TopBar from './components/TopBar';
 import Tabs from './components/Tabs';
 import Configuracao from './components/Configuracao';
 import Alunos from './components/Alunos';
-// Os componentes abaixo serão implementados pelos outros membros
 import ScrumMaster from './components/ScrumMaster';
 import Owner from './components/Owner';
 import ProductOwner from './components/ProductOwner';
@@ -14,15 +13,6 @@ import Developers from './components/Developers';
 import Escalacao from './components/Escalacao';
 import CompradoresPapel from './components/CompradoresPapel';
 import CompradoresProduto from './components/CompradoresProduto';
-// import CorrupSabotagem from './components/CorrupSabotagem';
-// import Resultado from './components/Resultado';
-
-// Placeholders para evitar erro enquanto não implementados
-const Escalacao = () => <div className="panel"><h2>Escalação</h2><p>Em breve</p></div>;
-const BuyerProf = () => <div className="panel"><h2>Compradores (Papel)</h2><p>Em breve</p></div>;
-const BuyerProduct = () => <div className="panel"><h2>Compradores (Produto)</h2><p>Em breve</p></div>;
-const CorrupSabotagem = () => <div className="panel"><h2>Corrupção & Sabotagem</h2><p>Em breve</p></div>;
-const Resultado = () => <div className="panel"><h2>Resultado Final</h2><p>Em breve</p></div>;
 
 const TABS = [
   { key: 'configuracao', label: 'Configuração', component: Configuracao },
@@ -49,7 +39,6 @@ function App() {
   const handleLoadFile = async (file) => {
     try {
       const parsed = await carregarJSON(file);
-      // Garantir que campos essenciais existam
       if (!parsed.alunos) parsed.alunos = [];
       if (!parsed.teamNames) {
         parsed.teamNames = {
@@ -74,7 +63,7 @@ function App() {
 
   const updateDados = (path, value) => {
     setDados(prev => {
-      const newData = JSON.parse(JSON.stringify(prev)); // clone profundo
+      const newData = JSON.parse(JSON.stringify(prev));
       setByPath(newData, path, value);
       return newData;
     });
