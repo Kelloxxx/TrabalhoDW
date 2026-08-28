@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Painel de Avaliação — Simulação Scrum Competitiva</title>
+<link rel="stylesheet" href="css/style.css" />
+<script src="https://unpkg.com/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+  <div class="topbar">
+    <div>
+      <h1>Painel de Avaliação — Simulação Scrum Competitiva</h1>
+      <div class="sub" id="fileNameLbl">(nenhum arquivo carregado)</div>
+    </div>
+    <div class="topbar-actions">
+      <div class="fontctrl">
+        <span class="lbl">Fonte</span>
+        <button id="fontMinus" title="Diminuir fonte">A−</button>
+        <button id="fontReset" title="Restaurar fonte padrão">A</button>
+        <button id="fontPlus" title="Aumentar fonte">A+</button>
+        <span class="lbl" id="fontLbl">16px</span>
+      </div>
+      <input type="file" id="fileInput" accept="application/json,.json" style="display:none" />
+      <button class="btn btn-load" id="btnLoad">📂 Carregar dados (.json)</button>
+      <button class="btn btn-save" id="btnSave">💾 Salvar dados (.json)</button>
+      <button class="btn btn-reset" id="btnReset">Limpar tudo</button>
+    </div>
+  </div>
+  <div class="tabs" id="tabsBar"></div>
+  <div class="wrap">
+    <div id="panelWrap"></div>
+    <div class="footer-note">Os dados ficam apenas nesta janela até você clicar em "Salvar dados (.json)". Salve com frequência, especialmente ao final de cada Sprint.</div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
