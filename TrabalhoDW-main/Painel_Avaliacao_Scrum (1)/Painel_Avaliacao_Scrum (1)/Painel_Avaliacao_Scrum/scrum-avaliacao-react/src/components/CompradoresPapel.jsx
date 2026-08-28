@@ -44,7 +44,6 @@ const CompradoresPapel = ({ dados, updateDados }) => {
           </thead>
           <tbody>
             {filtered.map((item, idx) => {
-              // Índice original para updateDados
               const originalIndex = buyerProf.indexOf(item);
               return (
                 <tr key={`${item.sprint}-${item.comprador}`}>
