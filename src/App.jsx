@@ -12,6 +12,8 @@ import ScrumMaster from './components/ScrumMaster';
 import Owner from './components/Owner';
 import ProductOwner from './components/ProductOwner';
 import Developers from './components/Developers';
+import Corrupcao from './components/Corrupcao';
+import Sabotagem from './components/Sabotagem';
 // import BuyerProf from './components/BuyerProf';
 // import BuyerProduct from './components/BuyerProduct';
 // import CorrupSabotagem from './components/CorrupSabotagem';
