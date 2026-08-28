@@ -11,10 +11,8 @@ export default function Configuracao({ dados, updateDados }) {
     const oldVal = which === 'nomeA' ? empresaA : empresaB;
     if (!novoNome || novoNome === oldVal) return;
 
-    // Atualiza o nome no meta
     updateDados(`meta.${which === 'nomeA' ? 'empresaA' : 'empresaB'}`, novoNome);
 
-    // Atualiza referências em todas as abas (mutação controlada)
     const rename = (v) => (v === oldVal ? novoNome : v);
     const renameInArray = (arr, field) => {
       arr.forEach(item => { if (item[field] === oldVal) item[field] = novoNome; });
@@ -31,7 +29,6 @@ export default function Configuracao({ dados, updateDados }) {
       dados.teamNames[novoNome] = dados.teamNames[oldVal];
       delete dados.teamNames[oldVal];
     }
-    // Força atualização do estado (recria o objeto meta)
     updateDados('meta', { ...dados.meta });
   };
 
