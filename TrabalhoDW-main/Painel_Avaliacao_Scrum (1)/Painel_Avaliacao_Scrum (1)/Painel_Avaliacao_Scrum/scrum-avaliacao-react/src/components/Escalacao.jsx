@@ -5,18 +5,15 @@ const Escalacao = ({ dados }) => {
   const { alunos, meta, teamNames } = dados;
   const empresas = [meta.empresaA, meta.empresaB];
 
-  // Agrupa alunos por empresa e time
   const grouped = {};
   empresas.forEach(emp => {
     grouped[emp] = {};
     ['Caça', 'Transporte'].forEach(time => {
       grouped[emp][time] = alunos.filter(a => a.empresa === emp && a.time === time);
     });
-    // Alunos sem time (Scrum Master, Owner, Compradores, etc.)
     grouped[emp]['Sem time'] = alunos.filter(a => a.empresa === emp && !a.time);
   });
 
-  // Contagem de vagas (igual ao Alunos, apenas para exibição)
   const counts = {};
   empresas.forEach(e => {
     counts[e] = {
